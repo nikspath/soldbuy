@@ -3,5 +3,7 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url(r'^showbase/', showbase),
+    url(r'^custregister/', custregview),
+    url(r'^custlogin/',custloginview,name='custlogin'),
+    url(r'^logout/',custlogout),
 ]
